@@ -1,67 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>احجز استشارتك</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <div class="container">
-    <h1>احجز استشارتك الآن</h1>
-    <p class="subtitle">
-   استشارة سرّية، موثوقة، وموجهة خصيصًا لك كوليّ أمر.
-</p>
-
-
-    <form>
-      <label>الاسم الكامل:</label>
-      <input type="text" required>
-
-      <label>البريد الإلكتروني:</label>
-      <input type="email" required>
-
-      <label>عمر الطفل / المراهق:</label>
-      <input type="number" min="1" required>
-
-      <label>نوع الاستشارة:</label>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> نفسية</label>
-        <label><input type="checkbox"> تربوية</label>
-        <label><input type="checkbox"> مدرسية</label>
-        <label><input type="checkbox"> أخرى</label>
-      </div>
-
-      <label>وصف مختصر للمشكلة أو الهدف من الاستشارة:</label>
-      <textarea rows="4" required></textarea>
-
-      <label>اختر الموعد المناسب:</label>
-      <select required>
-        <option disabled selected>اختر من الأوقات المتاحة</option>
-        <option>09:00 – 09:45</option>
-        <option>10:00 – 10:45</option>
-        <option>11:00 – 11:45</option>
-        <option>13:00 – 13:45</option>
-        <option>14:00 – 14:45</option>
-        <option>15:00 – 15:45</option>
-        <option>16:00 – 16:45</option>
-        <option>17:00 – 17:45</option>
-      </select>
-
-      <div class="note">
-        <p>📌 ملاحظة مهمة:</p>
-        <ul>
-          <li>خصوصيتك مضمونة.</li>
-          <li>مدة الجلسة: 45 دقيقة.</li>
-          <li>الاستشارة تتم عبر تطبيق Google Meet.</li>
-          <li>سيتم التواصل معك لتأكيد الموعد خلال 24 ساعة.</li>
-        </ul>
-      </div>
-
-      <button type="submit">إرسال الطلب</button>
-    </form>
-  </div>
-
-</body>
-</html>
