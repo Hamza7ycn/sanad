@@ -10,49 +10,42 @@
 <body>
     <!-- شريط التنقل العلوي -->
 <nav class="navbar">
-        <div class="logo">
-            <i class="fas fa-seedling"></i>
-            <span>سند</span>
-        </div>
+    <div class="logo">
+        <i class="fas fa-seedling"></i>
+        <span>سند</span>
+    </div>
+    
+    <ul class="nav-links">
+        <li class="menu">
+            <a href="../interface/inter.html"   >الرئيسية</a>
+        </li>
         
-        <ul class="nav-links">
-            <li class="menu">
-                <label>الرئيسية</label>
-                 
-            </li>
-            
-            <li class="menu">
-                <label>من نحن</label>
-                <div class="dropdown-content">
-                    <a href="#">Our Team</a>
-                    <a href="#">Mission</a>
-                    <a href="#">Vision</a>
-                </div>
-            </li>
-            
-            <li class="menu">
-                <label>المزيد</label>
-                <div class="dropdown-content">
-                    <a href="#">Services</a>
-                    <a href="#">Products</a>
-                    <a href="#">Blog</a>
-                </div>
-            </li>
-            
-            <li class="menu">
-                <label>تواصل معنا</label>
-                <div class="dropdown-content">
-                    <a href="#">Email</a>
-                    <a href="#">Phone</a>
-                    <a href="#">Location</a>
-                </div>
-            </li>
-        </ul>
+        <li class="menu">
+            <a href="#" class="dropdown-trigger">من نحن</a>
+            <div class="dropdown-content">
+                <a href="#">Our Team</a>
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+            </div>
+        </li>
         
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-
+        <li class="menu">
+            <a href="#" class="dropdown-trigger" >المزيد</a>
+            <div class="dropdown-content">
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+            </div>
+        </li>
+        
+        <li class="menu">
+            <a href="#footer-contact">تواصل معنا</a>
+        </li>
+    </ul>
+    
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
 </nav>
 
 
@@ -69,7 +62,7 @@
 .
             </p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary"> احجز استشارتك الآن </a>
+                <a   href="#" class="btn btn-primary" onclick="window.location.href='../hajz/hajz.html';"  > احجز استشارتك الآن </a>
                
             </div>
         </div>
@@ -81,7 +74,7 @@
 
 
     <!-- قسم الميزات -->
-    <section class="about_us">
+    <section class="about_us"  >
 
         <div class="title_about">
             <h1>لماذا تختار سند ؟ </h1>
@@ -228,7 +221,7 @@
 
 
     <!-- تذييل الصفحة -->
-    <footer>
+    <footer id="footer-contact" >
         <div class="footer-content">
             <div class="footer-logo">
                 <i class="fas fa-seedling"></i>
@@ -237,15 +230,15 @@
             <div class="footer-links">
                 <h4>روابط سريعة</h4>
                 <ul>
-                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="../interface/inter.html">الرئيسية</a></li>
                     <li><a href="#">من نحن</a></li>
                     <li><a href="#">المزيد</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>تواصل معنا</h4>
-                <p><i class="fas fa-envelope"></i> sanad.parents.guide@gmail.com</p>
-                <p><i class="fas fa-phone"></i>      047 118 549 213+</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:sanad.parents.guide@gmail.com">sanad.parents.guide@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+213594118047">047 118 549 213+</a></p>
             </div>
         </div>
         <div class="social-icons">
