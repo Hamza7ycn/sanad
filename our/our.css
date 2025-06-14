@@ -130,6 +130,11 @@ html {
     cursor: pointer;
     color: #1e6c4f;
 }
+.profile:hover, .illustration:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -205,10 +210,24 @@ html {
   border:  #f8f9fa solid 2px;
 }
 
-h1, h2 {
+.section h1, .section h2 {
+  color: #000;
+}
+
+.hero h1, .hero h2,
+.section.alt h1, .section.alt h2 {
   color: #fff;
-  margin-bottom: 15px;
+}
+
+
+h1, h2 {
+ margin-bottom: 15px;
   margin-top: -10px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 2.0;
+}
+p {
+  font-size: 1.3rem;
 }
 
 .text-box {
@@ -339,6 +358,10 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
 }
+.profile, .illustration {
+  max-width: 100%;
+  height: auto;
+}
 
 /* التجاوب مع الشاشات المختلفة */
 @media (max-width: 992px) {
@@ -451,3 +474,26 @@ footer {
     }
 }
  
+@media (max-width: 480px) {
+  .illustration, .profile {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .section,
+  .section.alt,
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .text-box {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
