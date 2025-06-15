@@ -1,0 +1,489 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* شريط التنقل العلوي */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 80px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e6c4f;
+}
+
+.logo i {
+    margin-left: 10px;
+}
+
+/* Navigation Links Container */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Item Styles */
+.menu {
+    position: relative;
+    margin: 0 15px;
+}
+
+/* Menu Link Styles */
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+    margin-top: -6px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 999;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Dropdown Link Hover */
+.dropdown-content a:hover {
+    background-color: #1e6c4f;
+}
+
+/* Show dropdown when hovering menu */
+.menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover Effects for Menu Links */
+.nav-links > .menu > a:hover {
+    color: #176546;
+}
+
+/* Underline Effect for Menu */
+.nav-links > .menu > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1d5d3f;
+    transition: width 0.3s;
+}
+
+.nav-links > .menu > a:hover::after {
+    width: 100%;
+}
+
+/* Menu Toggle (for mobile) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1e6c4f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        display: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
+
+
+
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  color: #2f5d50; 
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.header p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #d1e7dd;
+  border: 2px solid #2f5d50;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* تأثير 3D */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #2f5d50;
+  font-size: 22px;
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  color: #406b5b;
+  font-size: 14px;
+}
+
+.card p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2f5d50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.card button {
+  background: #2f5d50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.card button:hover {
+  background: #244940;
+}
+/*footer */
+/* تذييل الصفحة */
+footer {
+    background: linear-gradient(to right, #2c7744, #1a4d2c);
+    color: #ecf0f1;
+    padding: 4rem 5% 2rem;
+     
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo i {
+    margin-left: 10px;
+    color:#3d794f;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-links h4::after, .footer-contact h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3d794f;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3d794f;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-left: 10px;
+    color:#3d794f;
+    width: 25px;
+}
+.footer-contact p a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Optional: Keeps text color consistent */
+}
+
+.social-icons {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background: #224822;
+    transform: translateY(-5px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* التجاوب مع الشاشات المختلفة */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin-bottom: 3rem;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .divider {
+        margin: 1.5rem auto;
+    }
+    
+    .hero-content p {
+        margin: 0 auto 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .hero {
+        padding: 3rem 5%;
+    }
+    
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .image-placeholder {
+        height: 300px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        width: 100%;
+    }
+}
+ 
+
+
+
+
+
+
+
+
