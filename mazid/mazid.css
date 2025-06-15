@@ -260,10 +260,10 @@ html {
 }
 .faq-box-question h2{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 32px;
    color: #2c3e50;
-   margin-right: 100px;
+   margin-right: 90px;
 }
 .faq-box-answer{
     max-height: 0px;
