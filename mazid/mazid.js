@@ -26,3 +26,18 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
+function toggleText() {
+  const textDiv = document.getElementById("text");
+
+  if (textDiv.style.display === "block") {
+    textDiv.style.display = "none";
+  } else {
+    textDiv.style.display = "block";
+    textDiv.style.animation = "none"; 
+    void textDiv.offsetWidth;      
+    textDiv.style.animation = "zoomIn 0.3s ease forwards";
+  }
+}
+
+
+
