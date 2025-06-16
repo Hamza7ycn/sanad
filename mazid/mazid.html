@@ -136,9 +136,11 @@
 <p>يمثل إيذاء الذات غير الانتحاري سلوكًا يحتاج إلى قراءة عميقة، وليس إصدار أحكام. التحدي الأكبر لا يكمن في الظاهر من السلوك، بل في الأسباب الكامنة خلفه. ومع التوعية المجتمعية، والتدخل العيادي المنظم، يمكن التقليل من آثاره، ومساعدة المراهق على اكتساب مهارات أكثر فاعلية في التعبير والتعامل مع الضغوط.</p>
 
 
-<div class="but">
-    <button class="plus-button" onclick="toggleText()">+</button>
-    <div id="text" class="hidden-text">
+                    <div class="but">
+    <button class="plus-button" onclick="toggleText(event)">+</button>
+    <div class="hidden-text" style="display: none;">
+        
+ 
         <ul>
   <li>
     Brown, R. C., & Plener, P. L. (2017). <em>Non-suicidal self-injury in adolescence</em>. <strong>Current Psychiatry Reports</strong>, <strong>19</strong>(20).
@@ -157,7 +159,7 @@
 </div>
   </div>
 
-  <script src="script.js"></script>
+  
 
                 </div>
 
@@ -197,10 +199,15 @@
                     <h4>✨ خلاصة نفسية: </h4>
                     <p>التكنولوجيا ليست عدوًا، لكنها بيئة تحتاج لإدارة ذكية، خصوصًا في مراحل الطفولة الحساسة. فبدل أن نخوض معركة "المنع"، علينا أن نخلق علاقة صحية ومتوازنة مع الشاشة، تجعلها وسيلة للنمو لا عائقًا أمامه.</p>
 
+    
+
+                   
                     <div class="but">
-    <button class="plus-button" onclick="toggleText()">+</button>
-    <div id="text" class="hidden-text">
-       <ul>
+    <button class="plus-button" onclick="toggleText(event)">+</button>
+    <div class="hidden-text" style="display: none;">
+        
+ 
+        <ul>
   <li>
     Anderson, D., & Lee, S. (n.d.). <em>How to set screen time limits for kids</em>. Child Mind Institute. Retrieved from 
     <a href="https://childmind.org" target="_blank">https://childmind.org</a>
@@ -232,9 +239,7 @@
 </div>
   </div>
 
-  <script src="script.js"></script>
-                </div>
-            </div>
+   
 
 
 
@@ -246,7 +251,7 @@
         
         </div>
          
-    </div>
+    
 
  </section>
 
@@ -292,6 +297,13 @@
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        function toggleText() {
+    const textElements = document.querySelectorAll('.hidden-text');
+    textElements.forEach(text => {
+        text.style.display = text.style.display === 'none' ? 'block' : 'none';
+    });
+}
     </script>
 
 

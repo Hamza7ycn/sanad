@@ -7,10 +7,10 @@ for (i = 0; i < faq.length; i++) {
         this.classList.toggle("active");
         /* Toggle between hiding and showing the active panel */
         var body = this.nextElementSibling;
-        if (body.style.maxHeight == "3100px") {
+        if (body.style.maxHeight == "5100px") {
             body.style.maxHeight = "0px";
         } else {
-            body.style.maxHeight = "3100px";
+            body.style.maxHeight = "5100px";
         }
     });
 }
@@ -26,17 +26,21 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
-function toggleText() {
-  const textDiv = document.getElementById("text");
-
-  if (textDiv.style.display === "block") {
-    textDiv.style.display = "none";
-  } else {
-    textDiv.style.display = "block";
-    textDiv.style.animation = "none"; 
-    void textDiv.offsetWidth;      
-    textDiv.style.animation = "zoomIn 0.3s ease forwards";
-  }
+function toggleText(event) {
+    // Get the button that was clicked
+    const button = event.target;
+    
+    // Find the hidden text div right after the button
+    const hiddenText = button.nextElementSibling;
+    
+    // Toggle the display
+    if (hiddenText.style.display === "none" || !hiddenText.style.display) {
+        hiddenText.style.display = "block";
+        button.textContent = "-";
+    } else {
+        hiddenText.style.display = "none";
+        button.textContent = "+";
+    }
 }
 
 
