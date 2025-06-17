@@ -250,7 +250,7 @@ footer {
     background: linear-gradient(to right, #2c7744, #1a4d2c);
     color: #ecf0f1;
     padding: 4rem 5% 2rem;
-     
+    margin-top: 4rem;
 }
 
 .footer-content {
@@ -358,10 +358,153 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
 }
-.profile, .illustration {
-  max-width: 100%;
-  height: auto;
+
+/* التجاوب مع الشاشات المختلفة */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin-bottom: 3rem;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .divider {
+        margin: 1.5rem auto;
+    }
+    
+    .hero-content p {
+        margin: 0 auto 2.5rem;
+    }
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .hero {
+        padding: 3rem 5%;
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .image-placeholder {
+        height: 300px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-image{
+       margin-top: -500px;
+       width: 100px;
+       height: 200px;
+    }
+
+    .hero-image img{
+       margin-top: -400px;
+       width: 400px;
+       margin-right: -150px;
+    }
+
+    .hero-content{
+       margin-top: 100px;
+       margin-bottom: 100px;
+        
+    }
+
+    .about_us{
+        margin-top: 600px;
+        margin-bottom: 500px;
+    }
+    .services  {
+       flex-direction: column;
+       width: 300px;
+    }
+    .item{
+        flex-direction: column;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        width: 100%;
+    }
+}
+ 
 
 /* التجاوب مع الشاشات المختلفة */
 @media (max-width: 992px) {

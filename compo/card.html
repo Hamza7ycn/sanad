@@ -21,20 +21,19 @@
  <!-- menu -->
 <nav class="navbar">
     <div class="logo">
-        
         <span>سند</span>
     </div>
     
     <ul class="nav-links">
         <li class="menu">
-            <a href="../interface/inter.html">الرئيسية</a>
+            <a href="../interface/inter.html"   >الرئيسية</a>
         </li>
         
         <li class="menu">
             <a href="../our/our.html" class="dropdown-trigger">من نحن</a>
         </li>
         
-           <li class="menu">
+        <li class="menu">
             <a href="#" class="dropdown-trigger" >المزيد</a>
             <div class="dropdown-content">
                 <a href="../mazid/mazid.html">مقالات</a>
@@ -52,9 +51,10 @@
     <div class="menu-toggle">
         <i class="fas fa-bars"></i>
     </div>
-</nav>  
+</nav>
 
-  <main>
+
+  <section>
     <header class="header">
       <h1>اختبر صحتك النفسية الآن...</h1>
       <p>اختبارات نفسية مبنية على أدوات علمية، مصممة لتكون خفيفة وسريعة، لكنها عميقة الأثر. خُذ خطوة نحو الوعي!</p>
@@ -77,15 +77,15 @@
         <button type="button" aria-label="بدء اختبار الضغط النفسي">بدء الاختبار</button>
       </article>
     </section>
-  </main>
+</section>
 
-   <!-- تذييل الصفحة -->
-    <footer id="footer-contact" role="contentinfo">
+
+
+    <!-- تذييل الصفحة -->
+    <footer id="footer-contact" >
         <div class="footer-content">
             <div class="footer-logo">
- 
-                <i class="fas fa-seedling" aria-hidden="true"></i>
- 
+                
                 <span>سند </span>
             </div>
             <div class="footer-links">
@@ -93,67 +93,28 @@
                 <ul>
                     <li><a href="../interface/inter.html">الرئيسية</a></li>
                     <li><a href="../our/our.html">من نحن</a></li>
-                    <li><a href="#">المزيد</a></li>
+                    <li><a href="#">المزيد</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>تواصل معنا</h4>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:sanad.parents.guide@gmail.com">sanad.parents.guide@gmail.com</a></p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+213594118047">047 118 549 213+</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:sanad.parents.guide@gmail.com">sanad.parents.guide@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+213594118047">047 118 549 213+</a></p>
             </div>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com/share/16SMxgnYQq/" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="https://tiktok.com/@sanad.parents.guide" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على تيك توك"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/sanad.parents.guide?igsh=YjU0aGt5eGF5emFi" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على انستغرام"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/@SanadParentsguide" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على يوتيوب"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/share/16SMxgnYQq/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://tiktok.com/@sanad.parents.guide" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/sanad.parents.guide?igsh=YjU0aGt5eGF5emFi" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@SanadParentsguide" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="copyright">
             <p>جميع الحقوق محفوظة &copy; 2025 سند </p>
         </div>
     </footer>
 
-    <script>
-        // JavaScript للقائمة المتنقلة على الأجهزة الصغيرة
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', function() {
-                    navLinks.classList.toggle('active');
-                    const isExpanded = navLinks.classList.contains('active');
-                    this.setAttribute('aria-expanded', isExpanded);
-                });
-                
-                // إغلاق القائمة عند النقر خارجها
-                document.addEventListener('click', function(event) {
-                    if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
-                        navLinks.classList.remove('active');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            }
-            
-            // تحسين الأداء للقوائم المنسدلة
-            const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
-            dropdownTriggers.forEach(trigger => {
-                trigger.addEventListener('mouseenter', function() {
-                    const dropdown = this.nextElementSibling;
-                    if (dropdown) {
-                        dropdown.style.display = 'block';
-                    }
-                });
-                
-                trigger.addEventListener('mouseleave', function() {
-                    const dropdown = this.nextElementSibling;
-                    if (dropdown) {
-                        dropdown.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
+ 
 
 </body>
 </html>
