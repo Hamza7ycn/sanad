@@ -2,194 +2,163 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="description" content="الأسئلة الشائعة حول منصة سند - إجابات على أكثر الأسئلة شيوعًا حول الاستشارات النفسية والتربوية">
-  <meta name="keywords" content="أسئلة شائعة, منصة سند, استشارات نفسية, تربية الأطفال, أسئلة وأجوبة">
-  <meta name="author" content="سند - منصة التربية الواعية">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="الأسئلة الشائعة - منصة سند">
-  <meta property="og:description" content="إجابات على أكثر الأسئلة شيوعًا حول منصة سند والاستشارات النفسية والتربوية">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-domain.com/les_qst/qst.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://your-domain.com/les_qst/qst.html">
-  <title>الأسئلة الشائعة - منصة سند | إجابات على استفساراتكم</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأسئلة الشائعة - سند</title>
   <link rel="stylesheet" href="qst.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Preload critical resources -->
-  <link rel="preload" href="qst.css" as="style">
-  <link rel="preload" href="../images/qst.png" as="image">
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 </head>
 <body>
-  <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
-
-  <!-- menu -->
-  <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <!-- شريط التنقل العلوي -->
+  <nav class="navbar">
     <div class="logo">
       <span>سند</span>
     </div>
     
     <ul class="nav-links">
       <li class="menu">
-        <a href="../interface/inter.html" aria-label="الانتقال إلى الصفحة الرئيسية">الرئيسية</a>
+        <a href="../interface/inter.html">الرئيسية</a>
       </li>
       
       <li class="menu">
-        <a href="../our/our.html" class="dropdown-trigger" aria-label="الانتقال إلى صفحة من نحن">من نحن</a>
+        <a href="../our/our.html" class="dropdown-trigger">من نحن</a>
       </li>
       
       <li class="menu">
-        <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">المزيد</a>
-        <div class="dropdown-content" role="menu">
-          <a href="../mazid/mazid.html" role="menuitem">مقالات</a>
-          <a href="../compo/card.html" role="menuitem">إختبارات نفسية </a>
-          <a href="../les_qst/qst.html" role="menuitem">أسئلة شائعة </a>
-          <a href="#" role="menuitem">دورات أونلاين</a>
+        <a href="#" class="dropdown-trigger">المزيد</a>
+        <div class="dropdown-content">
+          <a href="../mazid/mazid.html">مقالات</a>
+          <a href="../compo/card.html">إختبارات نفسية </a>
+          <a href="../les_qst/qst.html">أسئلة شائعة </a>
+          <a href="#">دورات أونلاين</a>
         </div>
       </li>
       
       <li class="menu">
-        <a href="#footer-contact" aria-label="الانتقال إلى معلومات التواصل">تواصل معنا</a>
+        <a href="#footer-contact">تواصل معنا</a>
       </li>
     </ul>
     
-    <div class="menu-toggle" aria-label="فتح القائمة" role="button" tabindex="0">
-      <i class="fas fa-bars" aria-hidden="true"></i>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
     </div>
-  </nav>  
+  </nav>
 
-  <main id="main-content" role="main">
-    <section class="tout">
-      <div class="text">
+  <!-- المحتوى الرئيسي -->
+  <main class="main-content">
+    <section class="hero-section">
+      <div class="hero-content">
         <h1>الأسئلة الشائعة</h1>
-        <h2>يهدف هذا القسم إلى توضيح أهم المعلومات المتعلقة بمنصة "سند"، والخدمات التي تقدمها، وذلك من خلال الإجابة على أكثر الأسئلة شيوعًا بين مستخدمينا.</h2>
-      </div>
-
-      <div class="image">
-        <img src="../images/qst.png" alt="الأسئلة الشائعة - منصة سند" loading="lazy">
+        <p>إجابات على أكثر الأسئلة شيوعاً حول خدماتنا واستشاراتنا النفسية والتربوية</p>
       </div>
     </section>
 
-    <!--the faq question-->
-    <section class="faq">
-      <!-- Heading -->
-      <div class="faq-heading">
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>كيف يمكنني حجز استشارة نفسية؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>يمكنك حجز استشارة نفسية من خلال التواصل معنا عبر البريد الإلكتروني أو الهاتف. سنقوم بتحديد موعد مناسب لك مع أحد مختصينا المؤهلين.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل الاستشارات تتم عبر الإنترنت؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، جميع استشاراتنا تتم عبر الإنترنت باستخدام Google Meet. هذا يوفر لك الراحة والخصوصية، ويمكنك الوصول إلينا من أي مكان.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>ما هي مدة الجلسة الاستشارية؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>مدة الجلسة الاستشارية الواحدة هي 60 دقيقة. خلال هذه المدة سنركز على فهم مشكلتك وتقديم الحلول المناسبة.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل المعلومات التي أشاركها سرية؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، نحن نلتزم بسرية تامة لجميع المعلومات التي تشاركها معنا. جميع المختصين لدينا ملتزمون بأخلاقيات المهنة وقواعد السرية.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>ما هي التحديات التي يمكنكم مساعدتي فيها؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نحن نقدم المساعدة في مجموعة واسعة من التحديات التربوية والنفسية مثل: نوبات الغضب، مشاكل النوم، صعوبات التعلم، بناء الثقة بالنفس، التواصل الفعال مع الأطفال، وغيرها.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل يمكنني الحصول على استشارة عاجلة؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، نحن نقدم استشارات عاجلة في الحالات الطارئة. يمكنك التواصل معنا مباشرة وسنحاول توفير موعد في أقرب وقت ممكن.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>ما هي مؤهلات المختصين لديكم؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>جميع المختصين لدينا حاصلون على شهادات أكاديمية معتمدة في علم النفس أو التربية، ولديهم خبرة ميدانية واسعة في العمل مع الأطفال والأسر.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>هل تقدمون خدمات للعائلات؟</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>نعم، نحن نقدم استشارات عائلية شاملة. يمكن أن تشمل الجلسة كلا الوالدين أو أفراد العائلة الآخرين حسب الحاجة.</p>
+          </div>
+        </div>
       </div>
-      <!-- Container -->
-      <div class="faq-content">
-        <!-- faq -->
-        <div class="faq-box-container">
-          <article class="faq-box">
-            <div class="faq-box-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1">
-              <h4>ما هي منصة "سند"؟</h4>
-              <span class="faq-box-icon" aria-hidden="true"></span>
-            </div>
-            <div class="faq-box-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-              <p>"سند" هي منصة رقمية موجهة للأولياء، تقدّم محتوى نفسي وتربوي مبني على أسس علمية، يساعدهم في تربية أبنائهم بطريقة واعية ومواكِبة لاحتياجات الطفل والمراهق.</p>
-            </div>
-          </article>
+    </section>
 
-          <article class="faq-box">
-            <div class="faq-box-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-2">
-              <h4>لمن تم إنشاء هذه المنصة؟</h4>
-              <span class="faq-box-icon" aria-hidden="true"></span>
-            </div>
-            <div class="faq-box-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-              <p>تم تصميم المنصة خصيصًا للأمهات والآباء، وأي شخص يهتم بتربية الأطفال والمراهقين بطريقة صحية وفعالة.</p>
-            </div>
-          </article>
-
-          <article class="faq-box">
-            <div class="faq-box-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-3">
-              <h4>هل يمكنني حجز جلسة استشارية من خلال المنصة؟</h4>
-              <span class="faq-box-icon" aria-hidden="true"></span>
-            </div>
-            <div class="faq-box-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-              <p>نعم، المنصة تتيح حجز جلسات استشارية فردية مع مختصين نفسيين</p>
-            </div>
-          </article>
-
-          <article class="faq-box">
-            <div class="faq-box-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-4">
-              <h4>هل الجلسات أونلاين؟</h4>
-              <span class="faq-box-icon" aria-hidden="true"></span>
-            </div>
-            <div class="faq-box-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-              <p>نعم، جميع الجلسات تُعقد عن بعد بطريقة آمنة وخاصة.</p>
-            </div>
-          </article>
-
-          <article class="faq-box">
-            <div class="faq-box-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-5">
-              <h4>هل يمكنني تجربة المنصة قبل الاشتراك؟</h4>
-              <span class="faq-box-icon" aria-hidden="true"></span>
-            </div>
-            <div class="faq-box-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-              <p>نعم، يوجد محتوى مجاني تجريبي يمكنك الاطلاع عليه قبل اتخاذ قرار الاشتراك.</p>
-            </div>
-          </article>
+    <section class="contact-section">
+      <div class="contact-content">
+        <h2>لم تجد إجابة لسؤالك؟</h2>
+        <p>تواصل معنا مباشرة وسنكون سعداء بمساعدتك</p>
+        <div class="contact-buttons">
+          <a href="mailto:sanad.parents.guide@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            راسلنا عبر البريد الإلكتروني
+          </a>
+          <a href="tel:+213594118047" class="btn btn-secondary">
+            <i class="fas fa-phone"></i>
+            اتصل بنا
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Schema Markup for FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "ما هي منصة سند؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "سند هي منصة رقمية موجهة للأولياء، تقدّم محتوى نفسي وتربوي مبني على أسس علمية، يساعدهم في تربية أبنائهم بطريقة واعية ومواكِبة لاحتياجات الطفل والمراهق."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "لمن تم إنشاء هذه المنصة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "تم تصميم المنصة خصيصًا للأمهات والآباء، وأي شخص يهتم بتربية الأطفال والمراهقين بطريقة صحية وفعالة."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل يمكنني حجز جلسة استشارية من خلال المنصة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، المنصة تتيح حجز جلسات استشارية فردية مع مختصين نفسيين"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل الجلسات أونلاين؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، جميع الجلسات تُعقد عن بعد بطريقة آمنة وخاصة."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل يمكنني تجربة المنصة قبل الاشتراك؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، يوجد محتوى مجاني تجريبي يمكنك الاطلاع عليه قبل اتخاذ قرار الاشتراك."
-        }
-      }
-    ]
-  }
-  </script>
-
   <!-- تذييل الصفحة -->
-  <footer id="footer-contact" role="contentinfo">
+  <footer id="footer-contact">
     <div class="footer-content">
       <div class="footer-logo">
-        <i class="fas fa-seedling" aria-hidden="true"></i>
+        <i class="fas fa-seedling"></i>
         <span>سند</span>
       </div>
       <div class="footer-links">
@@ -202,15 +171,15 @@
       </div>
       <div class="footer-contact">
         <h4>تواصل معنا</h4>
-        <p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:sanad.parents.guide@gmail.com">sanad.parents.guide@gmail.com</a></p>
-        <p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+213594118047">047 118 549 213+</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:sanad.parents.guide@gmail.com">sanad.parents.guide@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i><a href="tel:+213594118047">047 118 549 213+</a></p>
       </div>
     </div>
     <div class="social-icons">
-      <a href="https://www.facebook.com/share/16SMxgnYQq/" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-      <a href="https://tiktok.com/@sanad.parents.guide" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على تيك توك"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/sanad.parents.guide?igsh=YjU0aGt5eGF5emFi" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على انستغرام"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/@SanadParentsguide" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على يوتيوب"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/share/16SMxgnYQq/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://tiktok.com/@sanad.parents.guide" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/sanad.parents.guide?igsh=YjU0aGt5eGF5emFi" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@SanadParentsguide" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
     <div class="copyright">
       <p>جميع الحقوق محفوظة &copy; 2025 سند</p>
