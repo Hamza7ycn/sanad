@@ -366,9 +366,17 @@ h2 {
 }
 
 /* services */
+ 
+
+/* services */
+.services {
+  width: 1200px;
+  height: 700px;
+}
 .services{
     width: 1200px;
     height: 700px;
+ 
 }
 
 .services .title_services {
@@ -379,9 +387,9 @@ h2 {
     margin-right: 148px;
 }
 
-.services .tout_services{
+.services .tout_services {
     display: grid;
-    grid-template-columns: 1FR 1FR     ;
+    grid-template-columns: 1FR 1FR;
     width: 100%;
     height: 300PX;
     column-gap: 10PX;
@@ -405,10 +413,26 @@ h2 {
     transform: translateY(-10px);
 }
 
-.item .item_right{
+.item .item_right {
     margin-right: 30px;
 }
 
+ 
+.item .item_right h3 {
+   text-align: center;
+   font-size: 1.5rem;
+   margin-left: -10px;
+}
+
+.item .item_right p {
+   margin-right: 20px;
+   margin-top: 30px;
+   margin-left: 50px;
+   margin-right: 40px;
+}
+
+ 
+ 
 .item .item_right h3{
     text-align: center;
     font-size: 1.5rem;
@@ -423,31 +447,165 @@ h2 {
 }
 
 .item .item_left{
+ 
     width: 80px;
     margin-left: 20px;
     margin-bottom:40px ;
 }
 
-.item .item_left .image1{
+.item .item_left .image1 {
     width: 400px;
     margin-right: -110px;
 }
 
-.item .item_left .image2{
+.item .item_left .image2 {
     width: 270px;
     margin-right: -40px;
 }
 
-.item .item_left .image3{
+.item .item_left .image3 {
     width: 300px;
     margin-right: -60px;
 }
 
-.item .item_left .image4{
+.item .item_left .image4 {
     width: 300px;
     margin-right: -50px;
 }
 
+/* Media Queries - Only this section is modified */
+@media (max-width: 1250px) {
+  .services {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .services .title_services {
+    margin-right: 100px;
+  }
+  
+  .services .tout_services {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .services .title_services {
+    margin-right: 80px;
+  }
+  
+  .services .tout_services {
+    margin-right: 60px;
+  }
+  
+  .item .item_left .image1 {
+    width: 380px;
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 950px) {
+  .services {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .services .tout_services {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-right: 0;
+    justify-items: center;
+  }
+  
+  .tout_services .item {
+    width: 80%;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  
+  .item .item_left .image1 {
+    width: 350px;
+    margin-right: -90px;
+  }
+  
+  .item .item_left .image2 {
+    width: 250px;
+    margin-right: -35px;
+  }
+  
+  .item .item_left .image3,
+  .item .item_left .image4 {
+    width: 280px;
+    margin-right: -50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services .title_services {
+    margin-right: 0;
+  }
+  
+  .tout_services .item {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .item .item_left {
+    margin: 0 0 20px 0;
+    width: auto;
+  }
+  
+  .item .item_right {
+    margin-right: 0;
+  }
+  
+  .item .item_right p {
+    margin: 20px 0;
+  }
+  
+  .item .item_left .image1 {
+    width: 300px;
+    margin-right: 0;
+  }
+  
+  .item .item_left .image2 {
+    width: 220px;
+    margin-right: 0;
+  }
+  
+  .item .item_left .image3,
+  .item .item_left .image4 {
+    width: 250px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .item .item_left .image1 {
+    width: 250px;
+  }
+  
+  .item .item_left .image2 {
+    width: 180px;
+  }
+  
+  .item .item_left .image3,
+  .item .item_left .image4 {
+    width: 200px;
+  }
+  
+  .item .item_right h3 {
+    font-size: 1.3rem;
+  }
+  
+  .item .item_right p {
+    font-size: 0.9rem;
+  }
+}
 /*prix */
 .ctnr {
     display: flex;
@@ -691,6 +849,7 @@ footer {
     
     .hero {
         padding: 3rem 5%;
+        flex-direction: column;
     }
     
     h1 {
@@ -717,6 +876,41 @@ footer {
     .footer-content {
         flex-direction: column;
     }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-image{
+       margin-top: -500px;
+       width: 100px;
+       height: 200px;
+    }
+
+    .hero-image img{
+       margin-top: -400px;
+       width: 400px;
+       margin-right: -150px;
+    }
+
+    .hero-content{
+       margin-top: 100px;
+       margin-bottom: 100px;
+        
+    }
+
+    .about_us{
+        margin-top: 600px;
+        margin-bottom: 500px;
+    }
+    .services  {
+       flex-direction: column;
+       width: 300px;
+    }
+    .item{
+        flex-direction: column;
+    }
+ 
 }
 
 @media (max-width: 480px) {

@@ -398,6 +398,29 @@ html {
   }
 }
 
+
+ @media (max-width: 768px) {
+    .faq-heading  {
+        flex-direction: column;
+        margin-top: 160px;
+    }
+
+    .faq-heading .right{
+       margin-top: 100px;
+        width: 400px;
+
+    }
+
+    .faq-heading .left{
+        width: 200px;
+        margin-top: 100px;
+        margin-bottom: 120px;
+        margin-left: 50px;
+    }
+        
+ }
+
+
 /*footer */
 /* تذييل الصفحة */
 footer {

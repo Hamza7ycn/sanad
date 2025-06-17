@@ -319,7 +319,6 @@ html {
     }
     
  
-
  
  .tout{
     width: 100%;
@@ -351,7 +350,15 @@ html {
  }
 
 
- 
+  @media (max-width: 768px) {
+    .tout{
+        flex-direction: column;
+    }
+    .tout .image{
+        margin-left: 200px;
+    }
+ }
+
  
 
 
